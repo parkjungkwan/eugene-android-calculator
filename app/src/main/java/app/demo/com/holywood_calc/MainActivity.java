@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
     @Override
@@ -15,6 +16,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         final Context ctx = MainActivity.this;
+        final EditText num = findViewById(R.id.num);
         class Calc{
             int num, res;
             String op;
@@ -26,15 +28,16 @@ public class MainActivity extends AppCompatActivity {
             int getNum(){return num;}
             void setNum(){this.num = num;}
         }
-        final EditText num = findViewById(R.id.num);
+
         findViewById(R.id.plus).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                Toast.makeText(ctx,"들어온 값: "+ num.getText().toString(),Toast.LENGTH_LONG).show();
                 int int1 = Integer.parseInt(num.getText().toString());
                 //sum = int1 + int2;
                 Calc c = new Calc();
-                Log.d("입력값: ",c.getNum()+"");
-                c.execute();
+                Log.d("입력값: ",num.getText().toString());
+                //c.execute();
             }
         });
         findViewById(R.id.minus).setOnClickListener(new View.OnClickListener() {
