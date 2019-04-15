@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="계 산 기"
+        android:textSize="50dp"
+        android:gravity="center"
+        android:layout_marginTop="20dp"/>
+    <EditText
+        android:id="@+id/num"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        />
+
+    <Button
+        android:id="@+id/plus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=" + "
+        android:textSize="30dp"
+        android:background="#f4e00b"
+        android:layout_marginTop="20dp"/>
+    <Button
+        android:id="@+id/minus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="-"
+        android:textSize="30dp"
+        android:background="#f4e00b"
+        android:layout_marginTop="20dp"
+        />
+    <Button
+        android:id="@+id/multi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="*"
+        android:textSize="30dp"
+        android:background="#f4e00b"
+        android:layout_marginTop="20dp"/>
+    <Button
+        android:id="@+id/divid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="/"
+        android:textSize="30dp"
+        android:background="#f4e00b"
+        android:layout_marginTop="20dp"/>
+    <Button
+        android:id="@+id/equal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="="
+        android:textSize="30dp"
+        android:background="#0b3af4"
+        android:layout_marginTop="20dp"/>
+    <Button
+        android:id="@+id/reset"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="AC"
+        android:textSize="30dp"
+        android:background="#f40b4d"
+        android:layout_marginTop="20dp"/>
+
+</LinearLayout>
